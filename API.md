@@ -1,6 +1,6 @@
 ### Users/Login
-#### Отримання токена, який буде використано для всіх наступних запитів
-
+####Опис: процедура Отримання токена, який буде використано для всіх наступних запитів
+####Запит:
 curl --location 'http://domen/webservice/WebserviceStandard/Users/Login' \
 --header 'X-API-KEY: **Веб-серві -> Додатки -> Ключ**' \
 --header 'X-ENCRYPTED: 0' \
@@ -15,8 +15,9 @@ curl --location 'http://domen/webservice/WebserviceStandard/Users/Login' \
 }'
 
 
-### Запити після отримання токена
-
+### any req
+####Опис: структура будь-якого запиту не залежно від методу буде такою
+####Запит:
 curl --location --request GET 'http://domen/webservice/WebserviceStandard/Leads/Record/131' \
 --header 'X-API-KEY: **Веб-серві -> Додатки -> Ключ**' \
 --header 'X-TOKEN: **Отримали під час _Users/Login_** ' \
